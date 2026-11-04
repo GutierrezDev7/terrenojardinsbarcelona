@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@theme {
+  --color-stone-50: #f5f2e9;
+  --color-stone-100: #e9e5d8;
+  --color-stone-200: #d3cfbd;
+  --color-stone-300: #c1baa4;
+  --color-stone-400: #a59c85;
+  --color-stone-500: #887f68;
+  --color-stone-600: #706852;
+  --color-stone-700: #585543;
+  --color-stone-800: #414236;
+  --color-stone-900: #2e342a;
+  --color-stone-950: #20271f;
+
+  --color-amber-50: #fbf6e8;
+  --color-amber-100: #f6eccd;
+  --color-amber-200: #ecd99f;
+  --color-amber-300: #dfc37c;
+  --color-amber-400: #d2ad66;
+  --color-amber-500: #b58b4b;
+  --color-amber-600: #92703d;
+  --color-amber-700: #715833;
+  --color-amber-800: #51412a;
+  --color-amber-900: #382f22;
+  --color-amber-950: #251f17;
+
+  --color-emerald-50: #f0f3e9;
+  --color-emerald-100: #e0e8d4;
+  --color-emerald-200: #c6d4b1;
+  --color-emerald-300: #a9bd8c;
+  --color-emerald-400: #94a978;
+  --color-emerald-500: #788f5e;
+  --color-emerald-600: #60734c;
+  --color-emerald-700: #4a593d;
+  --color-emerald-800: #37432f;
+  --color-emerald-900: #283226;
+  --color-emerald-950: #1b241c;
+}
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    background-color: #17221c;
+  }
+
+  .font-headline {
+    font-family: 'Barlow Condensed', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-mono-num {
+    font-family: 'Space Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.bg-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #17221c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #414236;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d2ad66;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
